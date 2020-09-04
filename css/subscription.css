@@ -1,0 +1,16 @@
+html {
+    background-image: linear-gradient(to right, rgb(101, 167, 228), rgb(44, 105, 219));
+	background-size: fill;
+}
+
+h1 {
+    text-align: center;
+    font-style: sans-serif;
+    font-size: 4em;
+}
+
+h2 {
+    text-align: center;
+    font-style: sans-serif;
+    font-size: 2em;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/register_form_style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABkAAAAZAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4AAADPAAAA/wAAAP8AAADPAAAAPQAAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAAAAAAAAAAAAHAAAAKUAAAD+AAAA/wAAAP8AAAD/AAAA/wAAAP4AAAClAAAAHAAAAAAAAADqAAAAAAAAAAAAAAAAAAAARAAAAPIAAAD/AAAA9QAAAOwAAAD/AAAA/wAAAO8AAAD2AAAA/wAAAPIAAABEAAAA6wAAAAAAAAAAAAAAAAAAAIQAAADmAAAAqAAAANEAAAD/AAAA/wAAAP8AAAD/AAAA0gAAAKoAAADmAAAAhAAAAOsAAAAAAAAAAAAAAAAAAAA0AAAAmAAAAPoAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD6AAAAmAAAADQAAAC+AAAAAAAAAAMAAABiAAAA6QAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADpAAAAYgAAAAMAAAC6AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAC6AAAAFgAAAIoAAADzAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAPMAAACKAAAAFgAAAAAAAAAAAAAAFwAAAIoAAAD0AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA9AAAAIoAAAAXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFwAAAIsAAAD0AAAA/wAAAP8AAAD0AAAAiwAAABcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAIYAAACGAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD8PwAA+B0AAOAFAADAAQAAwAEAAMABAAAAAAAAAAAAAAAAAADAAwAA8A8AAPw/AAD//wAA//8AAA=="
+    rel="icon" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/registerform.js" defer></script>
+</head>
+<!--body-->
+<a href="index.html" class="previous round"><i class="material-icons">home</i></a>
+<form method="POST" action="register_form_response.html" onsubmit="return checkForm(this);">
+  <div class="container">
+    <h1>Registration</h1>
+    <p>Welcome! Register now to have access to GradsUNIon features.</p>
+    <p>Do note that compulsory questions are marked with an asterisk (*).</p>
+    <p><b>Username*:</b><input type="text" name="username"></p>
+    <p><b>Passsword*:</b><input type="password" name="pwd1"></p>
+    <p><b>Confirm Password*:</b><input type="password" name="pwd2"></p>
+    <div class="form-group">
+      <label for="email"><b>Email*:</b></label>
+      <input type="text" placeholder="Enter Email" name="email"
+        pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$">
+    </div>
+    <div class="form-group">
+      <label for="formRow"><b>Where did you hear about GradsUNIon? </b></label>
+      <div class="col-sm-5">
+        <label class=" formRow">Internet/ social media
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="col-sm-5">
+        <label class="formRow">Newspaper/ magazine
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="col-sm-5">
+        <label class="formRow">Recommended by parents/ teachers
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="col-sm-5">
+        <label class="formRow">Academic Institution Talks
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="col-sm-5">
+        <label class="formRow">Others
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+    <p><input type="submit"></p>
+</form>
+</body>
+
+</html>

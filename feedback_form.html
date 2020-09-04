@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Feedback Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/feedback_form_style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABkAAAAZAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4AAADPAAAA/wAAAP8AAADPAAAAPQAAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAAAAAAAAAAAAHAAAAKUAAAD+AAAA/wAAAP8AAAD/AAAA/wAAAP4AAAClAAAAHAAAAAAAAADqAAAAAAAAAAAAAAAAAAAARAAAAPIAAAD/AAAA9QAAAOwAAAD/AAAA/wAAAO8AAAD2AAAA/wAAAPIAAABEAAAA6wAAAAAAAAAAAAAAAAAAAIQAAADmAAAAqAAAANEAAAD/AAAA/wAAAP8AAAD/AAAA0gAAAKoAAADmAAAAhAAAAOsAAAAAAAAAAAAAAAAAAAA0AAAAmAAAAPoAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD6AAAAmAAAADQAAAC+AAAAAAAAAAMAAABiAAAA6QAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADpAAAAYgAAAAMAAAC6AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAC6AAAAFgAAAIoAAADzAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAPMAAACKAAAAFgAAAAAAAAAAAAAAFwAAAIoAAAD0AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA9AAAAIoAAAAXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFwAAAIsAAAD0AAAA/wAAAP8AAAD0AAAAiwAAABcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAIYAAACGAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD8PwAA+B0AAOAFAADAAQAAwAEAAMABAAAAAAAAAAAAAAAAAADAAwAA8A8AAPw/AAD//wAA//8AAA=="
+    rel="icon" type="image/x-icon">
+</head>
+<!--body-->
+<body>
+  <a href="index.html" class="previous round"><i class="material-icons">home</i></a>
+  <div class="container">
+    <form action="feedback_form_response.html" method="get">
+
+      <h1>Feedback</h1>
+      <p>Help our team in understanding how our e-services can serve you better. Thank you!</p>
+
+      <div class="form-group">
+        <label for="fullname"><b>Full Name</b></label>
+        <input type="text" placeholder="Enter your full name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="gender"><b>Gender</b></label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+      </div>
+
+      <div class="form-group">
+        <label for="school"><b>Current Academic Institution</b></label>
+        <select name="school" id="school">
+          <option value="">-- choose one --
+            <optgroup label="Junior Colleges">
+              <option value="ASJC">Anderson-Serangoon JC
+              <option value="ACJC">Anglo-Chinese JC
+              <option value="CJC">Catholic JC
+              <option value="EJC">Eunoia JC
+              <option value="HCI">Hwa Chong Instituition
+              <option value="JPJC">Jurong Pioneer JC
+              <option value="NYJC">Nanyang JC
+              <option value="NJC">National JC
+              <option value="RIJC">Raffles Instituition (JC)
+              <option value="SAJC">St Andrew JC
+              <option value="TMJC">Tampines-Meridian JC
+              <option value="TJC">Temasek JC
+              <option value="VJC">Victoria JC
+              <option value="YIJC">Yishun-Innova JC
+            </optgroup>
+            <optgroup label="Polytechnics">
+              <option value="SP">Singapore Polytechnic
+              <option value="NP">Ngee Ann Polytechnic
+              <option value="NYP">Nanyang Polytechnic
+              <option value="TP">Temasek Polytechnic
+              <option value="RP">Republic Polytechnic
+            </optgroup>
+            <optgroup label="Others (MI/IB/IP Schools)">
+              <option value="MI">Millenia Institute
+              <option value="NUS">NUS High School of Mathematics and Science
+              <option value="ACSI">Anglo-Chinese School (Independent)
+              <option value="MGS">Methodist Girls' School
+              <option value="SJI">St Joseph's Instituition
+              <option value="CHS">Catholic High School
+              <option value="CGSS">Cedar Girls' Secondary School
+              <option value="CHIJ">CHIJ St Nicholas Girls' School
+              <option value="DHS">Dunman High School
+              <option value="NGHS">Nanyang Girls' High School
+              <option value="RGSS">Raffles Girls' School (Secondary)
+              <option value="RIS">Raffles Instituition (Secondary)
+              <option value="RVHS">River Valley High School
+              <option value="SCGS">Singapore Chinese Girls' School
+              <option value="VS">Victoria School
+            </optgroup>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="formRow"><b>Which page did you check out in GradsUNIon?</b></label>
+        <label class="formRow"> Local University
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <label for="formRow"> Overseas University
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label for="formRow"> Careers
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <div class="slidecontainer">
+          <label for="slidecontainer"><b>Rate your overall experience with using GradsUNIon! </b></label>
+          <p><b>(Note: 0 = poor; 5 = good; 10 = excellent)</b></p>
+          0
+          <input type="range" min="1" max="10" value="5" step="1">
+          10
+        </div>
+
+        <div class="from-group">
+          <label for="feedback"><b>How has this website aid in your understanding of the education options
+              available?</b></label>
+          <input type="text" placeholder="Enter your feedback here" name="feedback1" required>
+        </div>
+
+        <div class="form-group">
+          <label for="feedback"><b>How has this website aid in your understanding of the career options
+              available?</b></label>
+          <input type="text" placeholder="Enter your feedback here" name="feedback2" required>
+        </div>
+
+        <div class="form-group">
+          <label for="feedback"><b>Any further comments/ improvements to be made? </b></label>
+          <input type="text" placeholder="Enter your feedback here" name="feedback3" required>
+        </div>
+
+        <button type="submit" class="submitbtn">Submit</button>
+
+    </form>
+  </div>
+</body>
+
+</html>

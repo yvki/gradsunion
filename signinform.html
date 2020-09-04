@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <title>Sign In Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/signin_form_style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABkAAAAZAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4AAADPAAAA/wAAAP8AAADPAAAAPQAAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAAAAAAAAAAAAHAAAAKUAAAD+AAAA/wAAAP8AAAD/AAAA/wAAAP4AAAClAAAAHAAAAAAAAADqAAAAAAAAAAAAAAAAAAAARAAAAPIAAAD/AAAA9QAAAOwAAAD/AAAA/wAAAO8AAAD2AAAA/wAAAPIAAABEAAAA6wAAAAAAAAAAAAAAAAAAAIQAAADmAAAAqAAAANEAAAD/AAAA/wAAAP8AAAD/AAAA0gAAAKoAAADmAAAAhAAAAOsAAAAAAAAAAAAAAAAAAAA0AAAAmAAAAPoAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD6AAAAmAAAADQAAAC+AAAAAAAAAAMAAABiAAAA6QAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADpAAAAYgAAAAMAAAC6AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAC6AAAAFgAAAIoAAADzAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAPMAAACKAAAAFgAAAAAAAAAAAAAAFwAAAIoAAAD0AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA9AAAAIoAAAAXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFwAAAIsAAAD0AAAA/wAAAP8AAAD0AAAAiwAAABcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAIYAAACGAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD8PwAA+B0AAOAFAADAAQAAwAEAAMABAAAAAAAAAAAAAAAAAADAAwAA8A8AAPw/AAD//wAA//8AAA=="
+    rel="icon" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/signinform.js" defer></script>
+</head>
+<!--body-->
+
+<body>
+  <a href="index.html" class="previous round"><i class="material-icons">home</i></a>
+  <h2>Hello there, welcome back to GradsUNIon! <i class="material-icons">mood</i></h2>
+
+  <div class="container">
+    <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+      <i class="material-icons">assignment_ind</i>Username: <input type="text" name="fname">
+      <div class="form-group">
+        <label for="psw"><i class="material-icons">fiber_pin</i> Password</label>
+        <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Password must contain at least one number, one uppercase/capital letter, one lowercase/small letter and 8 or more characters"
+          required>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+    <div id="message">
+      <div id="row-sm-4">
+        <p id="letter" class="invalid">A <b>small / lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital / uppercase</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum length of <b>8 characters</b></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
