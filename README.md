@@ -6,3 +6,5 @@ One of my modules for Year 1 is **Front-end Web Development (aka FED)** where I 
 1. Download the zipped files and open thmm in `Visual Studio Code`.
 
 2. Open the `index.html` file in a new tab and **right click to open in browser**.
+
+3. The rest of the URLs can be assessed by intercating with the navigation bar at the top of the webpage.
