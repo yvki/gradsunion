@@ -1,13 +1,9 @@
-# Project Background
-One of my modules for Year 1 is **Front-end Web Development (aka FED)** where I had to **code out a website over 2 months** that promotes a significant meaning. 
+## Features
+For the assignment, I decided on the problem statement to promote about the **variety of academic and career options available for fresh graduates** to choose from. 
 
-> I decide to promote about the **variety of academic and career options available for fresh graduates** to choose from. 
+For the **Academic** aspect, the website will showcase the **admission criteria for each autonomous local university** and highlight the **top 6 international universities**. 
 
-
-> For the **Academic** aspect, the website will showcase the **admission criteria for each autonomous local university** and highlight the **top 6 international universities**. 
-
-
-> For the **Career** aspect, the website will include **flipcards to promote the jobs available in the different industries** and a **fun mini quiz that tells graduates which industry is more relevant to them based on their interests**.
+For the **Career** aspect, the website will include **flipcards to promote the jobs available in the different industries** and a **fun mini quiz that tells graduates which industry is more relevant to them based on their interests**.
 
 ## Setup
 
